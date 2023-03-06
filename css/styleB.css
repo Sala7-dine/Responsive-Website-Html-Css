@@ -1,0 +1,471 @@
+:root{
+    --red:#b80000;
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+.L3anawin{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 32, 32, 0.151);
+}
+
+.L3anawin span{
+    color:var(--red);
+}
+
+.lmazid{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.lmazid:hover{
+    background:var(--red);
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--red);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--red);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--red);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../image/backg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .safa7at{
+    max-width: 50rem;
+}
+
+.home .safa7at h3{
+    font-size: 5rem;
+    color:#333;
+}
+
+.home .safa7at span{
+    font-size: 3rem;
+    color:var(--red);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .safa7at p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.about .kolchi1{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .kolchi1 .video-ngh{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .kolchi1 .video-ngh video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .kolchi1 .video-ngh h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .kolchi1 .safa7at{
+    flex:1 1 40rem;
+}
+
+.about .kolchi1 .safa7at h3{
+    font-size: 3rem;
+    color:#333;
+}
+
+.about .kolchi1 .safa7at p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.icons-ngh{
+    background:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.icons-ngh .icons{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+}
+
+.icons-ngh .icons img{
+    height:5rem;
+    margin-right: 2rem;
+}
+
+.icons-ngh .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+
+.icons-ngh .icons span{
+    color:#555;
+    font-size: 1.3rem;
+}
+
+.products .kolchi2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+}
+
+.products .kolchi2 .alls{
+    flex:1 1 26rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;    
+}
+
+.products .kolchi2 .alls .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding:.7rem 1rem;
+    font-size: 1.3rem;
+    color:var(--red);
+    background:rgba(255, 32, 32, 0.151);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .kolchi2 .alls .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.products .kolchi2 .alls .image img{
+    height:12rem;
+}
+
+.products .kolchi2 .alls:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .kolchi2 .alls .image .icons{
+    position: absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+}
+
+.products .kolchi2 .alls:hover .image .icons{
+    bottom:0;
+}
+
+.products .kolchi2 .alls .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background:var(--red);
+    color:#fff;
+}
+
+.products .kolchi2 .alls .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+
+.products .kolchi2 .alls .image .icons a:hover{
+    background:#333;
+}
+
+.products .kolchi2 .alls .safa7at{
+    padding:2rem;
+    text-align: center;
+}
+
+.products .kolchi2 .alls .safa7at h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.products .kolchi2 .alls .safa7at .price{
+    font-size: 1.8rem;
+    color:var(--red);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .kolchi2 .alls .safa7at .price span{
+    font-size: 1.3rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+
+
+
+.review .kolchi2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.review .kolchi2 .alls{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    position: relative;
+    border:.1rem solid rgba(0,0,0,.1);
+}
+
+.review .kolchi2 .alls .fa-quote-right{
+    position: absolute;
+    bottom:3rem; right:3rem;
+    font-size: 6rem;
+    color:#eee;
+}
+
+.review .kolchi2 .alls .stars i{
+    color:var(--red);
+    font-size: 2rem;
+}
+
+.review .kolchi2 .alls p{
+    color:#999;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+}
+
+.review .kolchi2 .alls .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .kolchi2 .alls .user img{
+    height:6rem;
+    width:6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .kolchi2 .alls .user h3{
+    font-size: 2rem;
+    color:#333;
+}
+
+.review .kolchi2 .alls .user span{
+    font-size: 1.5rem;
+    color:#999;
+}
+
+
+.contact .kolchi1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .kolchi1 form{
+    flex:1 1 40rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.contact .kolchi1 .image{
+    flex:1 1 40rem;
+}
+
+.contact .kolchi1 .image img{
+    width: 100%;
+}
+
+.contact .kolchi1 form .alls{
+    padding:1rem;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+
+.contact .kolchi1 form .alls:focus{
+    border-color: var(--red);
+}
+
+.contact .kolchi1 form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.footer .kolchi2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer .kolchi2 .alls{
+    flex:1 1 25rem;
+}
+
+.footer .kolchi2 .alls h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.footer .kolchi2 .alls a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer .kolchi2 .alls a:hover{
+    color:var(--red);
+    text-decoration: underline;
+}
+
+.footer .kolchi2 .alls  img{
+    margin-top: 1rem;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 40%;
+    }
+
+    header{
+        padding:1rem;
+    }
+
+    section{
+        padding:1rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 45%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
